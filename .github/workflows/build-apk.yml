@@ -21,6 +21,9 @@ jobs:
 
       - name: Configurer Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      
 
       - name: Construire l’APK debug
         run: gradle assembleDebug
